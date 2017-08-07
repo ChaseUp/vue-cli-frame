@@ -90,8 +90,9 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
-  ].concat(utils.htmlPlugin())
+    ]),
+    ...utils.htmlPlugin()
+  ]
 })
 
 if (config.build.productionGzip) {
