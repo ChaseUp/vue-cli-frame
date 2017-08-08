@@ -14,9 +14,9 @@ module.exports = {
       browsers: ['iOS > 7', 'Android > 3.2']
     }),
     require('postcss-nested')(),
-    require('postcss-px2rem')({
-      remUnit: 75
-    })
+    // require('postcss-px2rem')({
+    //   remUnit: 75
+    // })
   ],
   transformToRequire: {
     video: 'src',
